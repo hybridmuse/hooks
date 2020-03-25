@@ -12,7 +12,7 @@
 - Data pre- and postprocessing
 - etc.
 
-To a function or class without having to change its original code while also keeping everything cleanly separated and testable. See the [⚓ release post for a quick overview](https://blog.feathersjs.com/async-middleware-for-javascript-and-typescript-31a0f74c0d30).
+to a function or class without having to change its original code while also keeping everything cleanly separated and testable. See the [⚓ release post for a quick overview](https://blog.feathersjs.com/async-middleware-for-javascript-and-typescript-31a0f74c0d30).
 
 <!-- TOC -->
 
@@ -255,7 +255,7 @@ hook1 after
 
 ## Options
 
-Instead an array of middleware, an object with the following options can be passed:
+Instead of an array of middleware, an object with the following options can be passed:
 
 - `middleware` - The array of middleware functions
 - `context` (*optional*) - A function `(self: any, fn: any, args: any[], context: HookContext) => HookContext` that updates the existing `context` with information about the function call like the `this` reference (`self`), the wrapped function (`fn`) and the function call arguments (`args`). Usually used for [named parameters](#using-named-parameters).
@@ -642,7 +642,7 @@ class HappyHelloSayer extends HelloSayer {
 
 > __Note:__ Decorators only work on classes and class methods, not on functions. Standalone (arrow) functions require the [JavaScript function style](#function-hooks) hook registration.
 
-# Best practises
+# Best practices
 
 - Hooks can be registered at any time by calling `hooks` again but registration should be kept in one place for better visibility.
 - Decorators make the flow even more visible by putting it right next to the code the hooks are affecting.
